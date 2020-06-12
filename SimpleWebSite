@@ -2,8 +2,8 @@
 # Install Apache Web Server
 yum install -y httpd
 # Download web site files
-wget https://us-west-2-tcprod.s3.amazonaws.com/courses/ILT-TF-100-TECESS/v4.6.9/lab-1-build-a-web-server/scripts/lab-app.zip 
-unzip lab-app.zip -d /var/www/html/ 
+wget https://raw.githubusercontent.com/ashapoaws/ec2/master/index.html 
+cp index.html /var/www/html/ 
 # Turn on web server 
 chkconfig httpd on 
 service httpd start
